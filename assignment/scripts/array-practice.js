@@ -38,7 +38,7 @@ console.log('Last animal is', animalArray[3])
 
 // 3.c. (STRETCH) TODO: Log the last animal by using the array length, 
 //      instead of the exact index number of the last item
-console.log('Last animal is', animalArray.length - 1)
+console.log('Last animal is', animalArray[animalArray.length - 1])
 
 
 // 4. Adding & Removing Array Items
@@ -46,11 +46,11 @@ console.log('--- 4. Adding and removing array items ---');
 
 // Example: Add an animal to the end using Array.push
 animalArray.push('penguin');
-console.log('Added an animal to end,', animalArray);
+console.log('Added an animal to end,', animalArray[animalArray.length - 1]);
 
 // 4.a. TODO: Add a new food at the end of your array & log the array
 favoriteFoods.push('falafel');
-console.log('Added a new food', favoriteFoods);
+console.log('Added a new food', favoriteFoods[favoriteFoods.length - 1]);
 
 
 // Example: Remove the last animal by using Array.pop
@@ -67,11 +67,11 @@ console.log('Favorite foods are now:', favoriteFoods);
 
 // Example: Add an animal to the beginning using Array.unshift
 animalArray.unshift('walrus');
-console.log(`Added an animal to beginning: ${animalArray}`);
+console.log(`Added an animal to beginning: ${animalArray[0]}`);
 
 // 4.c. TODO: Add a food at the beginning of the array & log the array
 favoriteFoods.unshift('Pasta');
-console.log(`New food added to beginning: ${favoriteFoods}`);
+console.log(`New food added to beginning: ${favoriteFoods[0]}`);
 
 // Example: Remove the first animal using Array.shift
 removedAnimal = animalArray.shift();
@@ -87,7 +87,7 @@ console.log('My favorite foods are now:', favoriteFoods);
 // 4.e (STRETCH) TODO: Replace the second food in your array
 //      with another one of your favorite foods.
 //      Then log the updated array.
-favoriteFoods[1] = 'Ramen';
+favoriteFoods[1] = 'ramen';
 console.log(favoriteFoods);
 
 // 4.f (STRETCH) TODO: Sort your favoriteFoods array
@@ -100,7 +100,7 @@ console.log(favoriteFoods);
 //     putting the word "and" between each item.
 //     eg "tacos and pizza and pasta". Log the string.
 
-favoriteFoods = favoriteFoods[0] + ' and' + favoriteFoods[1] + ' and' + favoriteFoods[2] + ' and' + favoriteFoods[3] + ' and' + favoriteFoods[4];
+favoriteFoods = favoriteFoods[0] + ' and ' + favoriteFoods[1] + ' and ' + favoriteFoods[2] + ' and ' + favoriteFoods[3];
 console.log(favoriteFoods);
 // 4.h (STRETCH) TODO: Make a new array that combines 
 //     the favorite foods array with the animals array.
@@ -109,3 +109,4 @@ console.log(favoriteFoods);
 //     ['pizza', 'pasta', 'fish', 'cat', 'bird', 'dog']
 let combinedArrays = animalArray.concat(favoriteFoods);
 console.log(combinedArrays);
+// favoriteFoods array has been changed to reflect 4.g. New string is logged instead of individual items.
